@@ -12,7 +12,9 @@ connectDB();
 
 app.use(express.json())
 app.use(cors({
-  origin: 'http://localhost:5173' || 'https://1-fi-sde-1-assignment.vercel.app'
+  origin: 'https://1-fi-sde-1-assignment.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
 }))
 
 
