@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const API_BASE = "http://localhost:3000";
+const API_BASE = "http://localhost:3000" || "https://onefi-sde1-assignment.onrender.com";
 
 const stringToColor = (text = "") => {
   if (!text) return "#cbd5f5";

@@ -12,7 +12,7 @@ connectDB();
 
 app.use(express.json())
 app.use(cors({
-  origin: 'http://localhost:5173'
+  origin: 'http://localhost:5173' || 'https://onefi-sde1-assignment.onrender.com'
 }))
 app.use('/images', express.static('images'));
 
