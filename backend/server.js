@@ -12,8 +12,10 @@ connectDB();
 
 app.use(express.json())
 app.use(cors({
-  origin: 'http://localhost:5173' || 'https://onefi-sde1-assignment.onrender.com'
+  origin: 'http://localhost:5173' || 'https://1-fi-sde-1-assignment.vercel.app'
 }))
+
+
 app.use('/images', express.static('images'));
 
 app.use('/api/products', productRoute);
