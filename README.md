@@ -5,30 +5,19 @@ A simple full‑stack demo store with a React frontend and Node/Express + MongoD
 ### i. Setup and run instructions
 
 ```bash
-# 1) Prerequisites
-# - Node.js 18+
-# - MongoDB running locally or a cloud Mongo URI
 
-# 2) Configure environment
+
 cp backend/.env.example backend/.env   # if present; otherwise create backend/.env
 
-# backend/.env should include at least
-# MONGO_URI=mongodb://localhost:27017/fi1
-
-# 3) Install deps (run from repo root or each directory separately)
 cd backend && npm install
 cd ../frontend && npm install
 
-# 4) Seed the database (optional: resets products)
 cd ../backend
 node seed.js
 
-# 5) Start servers (separate terminals)
-# Terminal A - backend
 cd backend
-npm start            # or: node server.js
+node server.js
 
-# Terminal B - frontend
 cd frontend
 npm run dev          # open the shown URL (e.g., http://localhost:5173)
 ```
